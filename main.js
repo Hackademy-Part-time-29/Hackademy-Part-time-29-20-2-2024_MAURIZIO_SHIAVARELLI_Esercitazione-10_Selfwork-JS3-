@@ -168,3 +168,74 @@
 
 
 // esercizio 3
+
+// Scrivi un programma che converta una temperatura inserita dall’utente con una delle seguenti descrizioni, stampate in console:
+
+// se temperatura e’ minore di 20, stampare “non ci sono piu’ le mezze stagioni”
+// se temperatura e’ maggiore uguale a 30, stampare “lu mare, lu sole, lu ientu”
+// se temperatura e’ minore di 30, stampare “mi dia una peroni sudata”
+// se temperatura e’ minore di 0, stampare “non e’ tanto il freddo quanto l’umidità’”
+// se temperatura e’ minore di -10, stampare “copriti…ancora ti raffreddi”
+// Cerca di risolvere questo esercizio utilizzando prima if else e poi con switch case.
+
+
+
+// else if
+
+// let temperatura = parseInt(prompt("inserisci temperatura"))
+
+// if (temperatura >1 && temperatura <= 20){
+//     console.log("non ci sono piu le mezze stagioni");
+// }else if(temperatura >= 30){
+//     console.log("ci fsc call");
+// }else if(temperatura >-9 && temperatura < 0){
+//     console.log("non é tanto il freddo quanto l'umidita");
+// }else if(temperatura < -10){
+//     console.log("copriti angor t pigj na jocc");
+// }else if(temperatura > 21 && temperatura < 30){
+//     console.log("no so come vestirmi")
+// };
+
+
+
+
+
+
+
+// switch case
+
+let temperatura = parseInt(prompt("inserisci temperatura"))
+
+switch(true){
+    
+    case( temperatura >=1 && temperatura <= 20 ):
+    console.log("d'estate si sta bene, ma l'inverno fa freddo");
+    break;
+
+    case( temperatura >= 30 && temperatura < 40 ):
+    console.log("fsc nu call");
+    break;
+
+    case( temperatura >=-9 && temperatura < 0 ):
+    console.log("non é tanto il freddo quanto l'umidita");
+    break;
+
+    case(temperatura <= -10):
+    console.log("copriti angor t pigj na jocc");
+    break;
+
+    case(temperatura > 21 && temperatura < 30):
+    console.log("non so cosa mettermi");
+    break;
+
+    default:
+    console.log( "wallio, attento a quello che scrivi");
+}
+
+
+
+
+
+// case( votoSwitch < 18 ):
+// //     console.log("insufficente");
+// //     break;
